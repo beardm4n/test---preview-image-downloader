@@ -3,12 +3,15 @@ const $input = document.querySelector('input[type="file"]');
 $input.addEventListener('change', handleFileSelect);
 
 function handleFileSelect(e) {
-   // console.log(e.target.files[0]);
-   // console.log($input.files);
+   let file = e.target.files[0];
+
+   if (!file.type.match('image.*')) {
+      alert('You must select a picture');
+   }
 
    const reader = new FileReader();
    reader.onload = () => {
       console.log(reader.result);
    };
-   reader.readAsText($input.files[0]);
+   reader.readAsText(file);
 }
