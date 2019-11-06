@@ -1,0 +1,62 @@
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #f9ffc6;
+}
+
+section {
+   width: 100vw;
+   background: linear-gradient(0, #f9ffc6, #ffe58d, #ffd84b);
+}
+
+.dragAndDrop {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   margin-top: 1%;
+}
+
+.dragAndDrop label {
+   margin-bottom: 1%;
+   font-size: 25px;
+   font-family: 'Special Elite', cursive;
+}
+
+.dragAndDrop input {
+   padding: 2%;
+   border: 1px dashed black;
+   border-radius: 10px;
+}
+
+.range {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   margin-top: 2%;
+}
+
+.range label {
+   margin-bottom: 1%;
+   font-size: 25px;
+   font-family: 'Special Elite', cursive;
+}
+
+#list {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   margin-top: 2%;
+}
+
+span {
+   font-family: 'Special Elite', cursive;
+   margin-bottom: 1%;
+}
